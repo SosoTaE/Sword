@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sword</title>
+    <link rel="stylesheet" href="../static/css/index.css"/>
+    <script type="module" src="../static/js/index.js"></script>
+  </head>
+  <body>
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <h1>გამარჯობა!</h1>
+        <p>
+          ეს არის ვებსაიტი, რომლის დახმარებითაც აღმოაჩენთ სიტყვებს შორის ფარულ კავშირს! ეს პროექტი ფოკუსირებულია ანაგრამების პოვნაზე, ანუ სიტყვებზე, რომლებიც წარმოიქმნება სხვა სიტყვაში ასოების გადალაგებით, იმ შემთხვევაში თუკი ეს სიტყვები შეიცავს ერთსა და იმავე ასოებს. ამასთანავე, შეგიძლიათ აირჩიოთ სიტყვებს შორის მსგავსების დონე. ჩვენი ანაგრამების მაძიებელი გთავაზობთ სწრაფ და ეფექტურ გზას მსგავსი სიტყვების საპოვნელად cosine similarity-ის საშუალებით.
+        </p>
+        <button id="modalButton" class="main__button">დახურვა</button>
+      </div>
+    </div>
+    <main>
+      <section>
+        <div class="input__container">
+          <div>
+            <label for="promptInput">ჩაწერეთ სიტყვა:</label>
+            <div class="wrapper">
+              <input id="promptInput" type="text" />
+              <button class="main__button" id="searchButton">
+                <span>ძებნა</span>
+                <img src="../static/assets/search.png" class="button__icon" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <label>მსგავსების დონე: </label>
+            <div class="wrapper">
+              <input type="number" id="similarityLevel" min="0.1" max="1" value="0.8" step="0.01"/>
+            </div>
+          </div>
+        </div>
+        <label>სიტყვები და მსგავსების დონე:</label>
+        <div class="wrapper response__box" id="results">
+          <div class="no__res" id="notFound">
+            <img src="../static/assets/sad.png" />
+            <p>ბოდიში, შედეგები ვერ მოიძებნა.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

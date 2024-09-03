@@ -1,0 +1,6 @@
+Flask
+pymupdf
+python-dotenv
+pymongo
+numpy
+scikit-learn
