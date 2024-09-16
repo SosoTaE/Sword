@@ -1,10 +1,10 @@
 @import url("modal.css");
-@import url("sidebar.css");
 
 :root {
   --green: #69db71;
   --dark-green: #6bb771;
   --light-green: #b9e9bd;
+  --hover: #62cc69;
 }
 
 * {
@@ -23,7 +23,6 @@ body {
 
 main {
   width: 100%;
-  margin-left: clamp(100px, 18%, 400px);
 }
 
 section {
@@ -42,6 +41,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main__button:hover {
+  background-color: var(--hover);
 }
 .button__icon {
   width: 1rem;
@@ -100,6 +102,11 @@ label::before {
   background-color: var(--light-green);
 }
 
+.res__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 .res__item > span {
   padding: 0.25rem 0.7rem;
   border-radius: 3px;

@@ -24,7 +24,7 @@ def search_word_route():
 
         similarity = compare_words_char_cosine_similarity(word, each.get("word"))
 
-        if similarity >= 0.5 + 0.5 * minimum_similarity:
+        if similarity >= minimum_similarity:
             similar_words.append({"word": each.get("word"), "similarity": round(similarity, 2)})
 
 

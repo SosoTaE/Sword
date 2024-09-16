@@ -13,7 +13,7 @@
 }
 
 .modal__content {
-  width: clamp(300px, 40%, 900px);
+  width: clamp(500px, 40%, 900px);
   background-color: var(--light-green);
   border: 5px solid var(--dark-green);
   border-radius: 1rem;
@@ -28,6 +28,15 @@
 .modal__content > h1 {
   font-size: 1.25rem;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 500px) {
+  .modal__content {
+    padding: 1.5rem 2rem;
+  }
+  .modal__content > p {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (min-width: 1500px) {
