@@ -4,3 +4,5 @@ python-dotenv
 pymongo
 numpy
 scikit-learn
+requests
+bs4

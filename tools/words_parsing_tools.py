@@ -30,7 +30,7 @@ def contains_only_georgian_letters(word):
     Checks if a word contains only Georgian letters.
 
     Args:
-        word (str): The word to check.
+        word (tr): The word to check.
 
     Returns:
         bool: True if the word contains only Georgian letters, False otherwise.
