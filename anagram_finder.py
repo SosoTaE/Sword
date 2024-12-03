@@ -8,6 +8,7 @@ def home():
 
 @app.route('/similarWords', methods=["POST"])
 def search_words():
+    print("Hello World")
     return search_word_route()
 
 
